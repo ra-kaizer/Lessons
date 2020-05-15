@@ -2,7 +2,7 @@ class Complex:
 
     def __init__(self, real: float = 0, imaginary: float = 0):
         if not (isinstance(real, float) or isinstance(real, int)):
-            raise ValueError('Вещественная часть должна быть числом')
+            raise ValueError('Действительная часть должна быть числом')
         if not (isinstance(imaginary, float) or isinstance(imaginary, int)):
             raise ValueError('Мнимая составляющая часть должна быть числом')
         self.re = real
@@ -19,8 +19,8 @@ class Complex:
 
 
 if __name__ == '__main__':
-    c1 = Complex(1, 4)
+    c1 = Complex(1, -2)
     c2 = Complex(2, -4)
-    print(f'c1 = {c1}, c2 = {c2}')
-    print(f'c1 + c2 = {c1 + c2}')
-    print(f'c1 * c2 = {c1 * c2}')
+    print(f'c1 = {c1}, c2 = {c2}') #результат заданных чисел
+    print(f'c1 + c2 = {c1 + c2}') #результат сложения
+    print(f'c1 * c2 = {c1 * c2}') #результат умножения
